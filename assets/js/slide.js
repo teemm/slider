@@ -26,6 +26,7 @@ var slider = {
 			// $('.swicher').append('<div></div>');
 		}
 		$('.swicher').html(swichers);
+		$('.swicher').find('div').eq(0).addClass('selected');
 
 	},
 	goToSlie: function(n){
@@ -51,4 +52,7 @@ var slider = {
 };
 $(function(){
 	slider.init();
+	setInterval(function(){
+		slider.goToNext();
+	}, 2000);
 });
