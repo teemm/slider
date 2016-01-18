@@ -1,0 +1,73 @@
+.slider{
+	height: 450px;
+	width: 1100px;
+	position: relative;
+}
+.slider div i {
+	color: rgba(200,200,200, 0.5);
+	position:absolute;
+	top: 45%;
+}
+.arrow{
+	width: 43px;
+	height: 100%;
+	cursor: pointer;
+	background: transparent;
+	position: absolute;
+}
+.slider div i:hover{
+	color: #fff;
+}
+#arrowLeft{
+	left: 50px;
+	z-index: 1;
+}
+#arrowRight{
+	right: 50px;
+	z-index: 1;
+}
+.imgArea{
+	position: absolute;
+	left: 50px;
+	right: 50px;
+	height: 100%;
+	overflow: hidden;
+}
+.slideMove{
+	position: absolute;
+	height: 100%;
+	width: 99999px;
+	background: red;
+}
+.slideItem{
+	height: 100%;
+	float: left;
+	background-size: cover;
+}
+.swicher{
+	position: absolute;
+	width: 100%;
+	bottom: 15px;
+	height: 22px;
+	text-align: center;
+
+}
+.swicher div {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border: 2px solid #E8E8E8 ;
+	border-radius: 50%;
+	cursor: pointer;
+	margin: 0 6px;
+}
+.swicher div.selected {
+	border: 2px solid #fff;
+	background: #fff;
+}
+.transition {
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
